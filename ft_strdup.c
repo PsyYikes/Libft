@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:58:24 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:38:53 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/21 20:29:03 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #include <stdio.h>
 #include "libft.h"
 
-static int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
 	int	i;
 
@@ -39,7 +39,6 @@ char	*ft_strdup(char *src)
 	dest[j] = '\0';
 	return (dest);
 }
-
 /*int main(void)
 {
 	char s1[50] = "never gonna give you up";

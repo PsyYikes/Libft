@@ -6,25 +6,18 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/16 14:19:59 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:38:11 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/22 17:21:35 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-char	*ft_tolower(char *str)
+int	ft_tolower(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (str[i] >= 'A' && str[i] <= 'Z')
-			str[i] += 'a' - 'A';
-		i++;
-	}
-	return (str);
+	if (c >= 'A' && c <= 'Z')
+		c += 'a' - 'A';
+	return ((unsigned long)c);
 }
 
 /*int	main(void)

@@ -1,44 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strrchr.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/21 15:11:56 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/21 15:30:41 by fgarcia          ###   ########.fr       */
+/*   Created: 2023/08/15 14:26:04 by fgarcia           #+#    #+#             */
+/*   Updated: 2023/10/21 22:42:16 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-#include <string.h>
 #include "libft.h"
 
-char	*ft_strrchr(const char	*str, int	c)
+int	ft_isdigit(int c)
 {
-	int		i;
-	int		tmp;
+	return (c >= '0' && c <= '9');
+}
 
-	tmp = -1;
+/*int	ft_isdigit(char *str)
+{
+	int	i;
+
 	i = 0;
-	while (str[i])
+	while (str[i] != '\0')
 	{
-		if (str[i] == c % 256)
-			tmp = i;
+		if (!is_numeric(str[i]))
+			return (0);
 		i++;
 	}
-	if (tmp == -1)
-	{
-		if ((unsigned char)c == '\0')
-			return ((char *)str + i);
-		return (NULL);
-	}
-	return ((char *)str + tmp);
+	return (1);
 }
-/*int main()
+
+int	main(void)
 {
-	int c = 'g';
-	const char tab[50] = "never gonna give you up";
-	printf("mine => %s\n", ft_strrchr(tab, c));
-	printf("real => %s\n", strrchr(tab , c));
+	char	tab[255] = ("");
+	
+	printf("%d", ft_isnumeric(tab));
+	return (0);
 }*/

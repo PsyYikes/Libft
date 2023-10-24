@@ -6,13 +6,11 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 20:05:02 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 20:26:54 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/22 20:34:18 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
 #include "libft.h"
-#include <stdio.h>
 
 void * ft_memcpy( void * dest, const void * src, size_t size )
 {
@@ -23,16 +21,14 @@ void * ft_memcpy( void * dest, const void * src, size_t size )
 	str1 = dest;
 	str = src;
 	i = 0;
-	while (str[i] != '\0' && (i < size))
+	while (i < size)
 	{
 		str1[i] = str[i];
 		i++;
 	}
-	while (i < size)
-	{
-		str1[i] = '\0';
-		i++;
-	}
+	
+	if (size == 0)
+		return (str1);
 	return(str1);
 }
 /*int	main(void)

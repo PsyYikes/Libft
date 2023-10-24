@@ -6,16 +6,15 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 16:14:42 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:40:50 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/22 17:24:18 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-int ft_isascii(int ch)
+int ft_isascii(int c)
 {
-	if (ch <= 0 || ch >= 127)
+	if (c >= 0 && c <= 127)
 		return (1);
 	else
 		return (0);

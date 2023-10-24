@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:33:09 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:40:57 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/21 22:22:14 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,17 +28,10 @@ static int	is_lettre(char c)
 	return (is_minuscule(c) || is_majuscule(c));
 }
 
-int	ft_isalpha(char *str)
+int	ft_isalpha(int c)
 {
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		if (!is_lettre(str[i]))
-			return (0);
-		i++;
-	}
+	if (!is_lettre(c))
+		return (0);
 	return (1);
 }
 

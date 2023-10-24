@@ -6,14 +6,13 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/22 18:05:46 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:38:03 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/21 20:21:39 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(char *str)
 {
 	int	i;
 
