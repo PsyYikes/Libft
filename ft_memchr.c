@@ -29,10 +29,10 @@ void *ft_memchr( const void *memb, int sc, size_t size )
 	}
 	return(NULL);
 }
-int main() 
+/*int main() 
 {
 	char data[] = { 30, 40, 50, 60, 70, 80, 90, 100, 57 };
 	const unsigned int size = 2;
 	printf ("%s\n", (unsigned char*)ft_memchr(data, 70, size));
 	printf ("%s\n", (unsigned char *)memchr(data, 70, size));
-}
+}*/

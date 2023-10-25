@@ -14,41 +14,37 @@
 
 void *ft_memmove( void *dest, const void *src, size_t size )
 {
-	size_t	i;
-	const char *str;
-	char *str1;
-
-	str1 = dest;
-	str = src;
+	char		*dst;
+	const char	*source;
+	size_t		i;
+	
+	dst = dest;
+	source = src;
 	i = 0;
-	if(str < str1)
+	if(source > dst)
 	{
-		str += size;
-		str1 += size;
 		while (i < size)
 		{
-			str1[i] = str[i];
-			i--;
-		}
-		return (str1);
-	}
-	else
-	{
-		i = 0;
-		while (i > size)
-		{
-			str1[i] = str[i];
+			dst[i] = source[i];
 			i++;
 		}
-		return(str1);
 	}
+	if (source < dst)
+	{
+		while (size != 0)
+		{
+			size--;
+			dst[size] = source[size];
+		}
+	}
+	return (dest);
 	
 }
-int	main(void)
+/*int	main(void)
 {
-	unsigned int n = 6;
+	unsigned int n = 0;
 	char str[50] = ("salut");
 	char *str1 = str + 1;
 	printf("%s", (char *) ft_memmove(str1, str , n));
 	return(0);
-}
+}*/
