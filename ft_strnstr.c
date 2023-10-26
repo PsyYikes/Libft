@@ -27,6 +27,8 @@ char	*ft_strnstr(const char *strb, const char *strl, size_t lenght)
 			return((char *)strb + i);
 		i++;
 	}
+	if (len <= 0)
+		return ((char *)strb);
 	return(NULL);
 }
 /*int main()

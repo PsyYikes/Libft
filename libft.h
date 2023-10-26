@@ -6,20 +6,20 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 13:32:37 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/22 19:32:47 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/26 20:06:30 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-#include <stdio.h>
+# include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
 # include <unistd.h>
 
 size_t	ft_strlcat(char *dest, const char *src, size_t size);
 size_t	ft_strlcpy(char *dest, const char *src, size_t size);
-size_t	ft_strlen(char *str);
+size_t	ft_strlen(const char *str);
 int		ft_atoi(const char *str);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_isalpha(int c);
@@ -41,5 +41,7 @@ void	*ft_memmove( void *dest, const void *src, size_t size );
 char	*ft_strchr(const char	*str, int	c);
 char	*ft_strrchr(const char	*str, int	c);
 char	*ft_strnstr(const char *strb, const char *strl, size_t lenght);
+char	*ft_substr(const char *s, unsigned int start, size_t len);
+char	*ft_strjoin(const char *s1, const char *s2);
 
 #endif
