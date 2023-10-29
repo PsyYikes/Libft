@@ -6,13 +6,11 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/21 15:11:53 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/22 17:25:10 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/29 21:02:37 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strchr(const char	*str, int	c)
 {

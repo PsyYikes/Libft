@@ -6,12 +6,10 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 17:00:38 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/18 17:39:41 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/29 21:02:24 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 int ft_memcmp( const void *s1, const void *s2, size_t n )

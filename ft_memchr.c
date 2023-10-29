@@ -6,12 +6,10 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 15:50:27 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/22 17:52:08 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/29 21:01:47 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <string.h>
-#include <stdio.h>
 #include "libft.h"
 
 void *ft_memchr( const void *memb, int sc, size_t size )

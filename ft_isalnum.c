@@ -6,11 +6,10 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/17 15:52:22 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/21 22:19:51 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/29 21:02:02 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 static int	is_minuscule(char c)

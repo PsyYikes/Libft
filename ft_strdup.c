@@ -6,23 +6,11 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/28 13:58:24 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/21 20:29:03 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/10/29 18:26:17 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdlib.h>
-#include <stdio.h>
 #include "libft.h"
-
-size_t	ft_strlen(const char *str)
-{
-	int	i;
-
-	i = 0;
-	while (str[i] != '\0')
-		i++;
-	return (i);
-}
 
 char	*ft_strdup(char *src)
 {
