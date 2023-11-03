@@ -6,7 +6,7 @@
 #    By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/18 14:33:19 by fgarcia           #+#    #+#              #
-#    Updated: 2023/10/29 19:46:03 by fgarcia          ###   ########.fr        #
+#    Updated: 2023/10/29 23:13:26 by fgarcia          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -37,6 +37,7 @@ SRCS	=		\
 	ft_strjoin	\
 	ft_substr	\
 	ft_strtrim	\
+	ft_itoa		\
 
 INC_FILES = libft.h
 
