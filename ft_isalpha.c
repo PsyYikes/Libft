@@ -6,33 +6,19 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/14 17:33:09 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/21 22:22:14 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/11/04 19:08:20 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include "libft.h"
 
-static int	is_minuscule(char c)
-{
-	return ('a' <= c && c <= 'z');
-}
-
-static int	is_majuscule(char c)
-{
-	return ('A' <= c && c <= 'Z');
-}
-
-static int	is_lettre(char c)
-{
-	return (is_minuscule(c) || is_majuscule(c));
-}
-
 int	ft_isalpha(int c)
 {
-	if (!is_lettre(c))
+	if ((c >= 'A' && c <= 'Z')||(c >= 'a' && c <= 'z'))
+		return (1);
+	else
 		return (0);
-	return (1);
 }
 
 /*int	main(void)

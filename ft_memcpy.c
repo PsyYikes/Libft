@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/18 20:05:02 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/10/22 20:34:18 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/11/04 19:18:57 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,18 +15,19 @@
 void * ft_memcpy( void * dest, const void * src, size_t size )
 {
 	size_t	i;
-	const char *str;
+	char *str;
 	char *str1;
 
-	str1 = dest;
-	str = src;
+	str1 = (char *)dest;
+	str = (char *)src;
 	i = 0;
+	if (!str1 && !str)
+		return(NULL);
 	while (i < size)
 	{
 		str1[i] = str[i];
 		i++;
 	}
-	
 	if (size == 0)
 		return (str1);
 	return(str1);
