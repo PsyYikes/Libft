@@ -6,7 +6,7 @@
 #    By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/18 14:33:19 by fgarcia           #+#    #+#              #
-#    Updated: 2023/11/04 18:52:06 by fgarcia          ###   ########.fr        #
+#    Updated: 2023/11/08 17:51:22 by fgarcia          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,7 +40,11 @@ SRCS	=		\
 	ft_itoa		\
 	ft_putchar_fd	\
 	ft_putstr_fd	\
-	
+	ft_split	\
+	ft_putendl_fd	\
+	ft_striteri	\
+	ft_putnbr_fd	\
+
 INC_FILES = libft.h
 
 SRC = $(addsuffix .c,$(SRCS))
