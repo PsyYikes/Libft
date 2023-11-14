@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/07 17:42:13 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/11/07 17:47:57 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/11/09 20:58:47 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,13 @@
 
 void ft_putendl_fd(char *s, int fd)
 {
-	if (!s)
-		return;
-	while(*s)
-	{
-		write(fd, &s, 1);
-		write(fd, "\n", 1);
-		s++;
-	}
+	write(fd, s, ft_strlen(s));
+	write(fd, "\n", 1);
 }
+/*int main()
+{
+	int	fd;
+	char *s = "cc tu veut voir ma bite?";
+	fd = ft_putendl_fd(s, fd);
+	printf("%d", fd);
+}*/

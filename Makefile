@@ -6,7 +6,7 @@
 #    By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/18 14:33:19 by fgarcia           #+#    #+#              #
-#    Updated: 2023/11/08 17:51:22 by fgarcia          ###   ########.fr        #
+#    Updated: 2023/11/14 22:14:11 by fgarcia          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,8 @@ SRCS	=		\
 	ft_putendl_fd	\
 	ft_striteri	\
 	ft_putnbr_fd	\
+	ft_strmapi	\
+	ft_lstnew	\
 
 INC_FILES = libft.h
 
@@ -58,6 +60,7 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME) : $(OBJ)
+	make -C libft bonus
 	ar -rcs $(NAME) $(OBJ)
 
 %.o: %.c

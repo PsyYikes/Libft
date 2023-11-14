@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/04 18:44:06 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/11/04 18:49:42 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/11/09 21:10:14 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 
 void ft_putstr_fd(char *s, int fd)
 {
-	if(!s)
-		return;
 	while(*s)
 	{
 		ft_putchar_fd(*s, fd);
