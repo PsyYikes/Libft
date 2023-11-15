@@ -6,7 +6,7 @@
 /*   By: fgarcia <fgarcia@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 00:03:31 by fgarcia           #+#    #+#             */
-/*   Updated: 2023/11/15 00:07:19 by fgarcia          ###   ########.fr       */
+/*   Updated: 2023/11/15 00:13:51 by fgarcia          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,5 +16,4 @@ void ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	while (lst != NULL)
 		f(lst->content);
-	*lst = NULL;
 }
